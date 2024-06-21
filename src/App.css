@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: #f0f2f5;
+}
+.login {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 2.5rem;
+  width: 100%;
+  padding: 0 2.5rem 0 1rem;
+  margin-bottom: 0.2rem;
+}
+.loginPage {
+  position: relative;
+  width: 420px;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.login[type="submit"] {
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login[type="submit"] {
+  font-size: medium;
+  font-weight: 600;
+}
+.login[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
-.App-link {
-  color: #61dafb;
+.rem-forget {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rem-forget a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.rem-forget a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.register {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.fa-icon {
+  position: absolute;
+  size: 4rem;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+.changePage {
+  border: none;
+  color: #007bff;
+  font-size: medium;
+  background-color: white;
+}
+.changePage:hover {
+  text-decoration: underline;
 }
